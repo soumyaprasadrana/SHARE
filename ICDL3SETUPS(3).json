@@ -1,0 +1,252 @@
+{
+   "name": "ICDL3SETUPS",
+   "scope": "global",
+   "status": true,
+   "description": "L3 ENVS",
+   "attributes": [
+      {
+         "name": "vm_ip",
+         "type": "string",
+         "size": 200,
+         "isPrimaryKey": true,
+         "isNullable": false,
+         "defaultValue": null,
+         "validators": [
+            "required"
+         ],
+         "alias": "VM"
+      },
+      {
+         "name": "icd7600",
+         "type": "list:yorn",
+         "size": 200,
+         "isPrimaryKey": false,
+         "isNullable": true,
+         "defaultValue": null,
+         "validators": null,
+         "alias": "ICD7600"
+      },
+      {
+         "name": "icd7601",
+         "type": "list:yorn",
+         "size": 200,
+         "isPrimaryKey": false,
+         "isNullable": true,
+         "defaultValue": null,
+         "validators": null,
+         "alias": "ICD7601"
+      },
+      {
+         "name": "icd7602",
+         "type": "list:yorn",
+         "size": 200,
+         "isPrimaryKey": false,
+         "isNullable": true,
+         "defaultValue": null,
+         "validators": null,
+         "alias": "ICD7602"
+      },
+      {
+         "name": "icd7603",
+         "type": "list:yorn",
+         "size": 200,
+         "isPrimaryKey": false,
+         "isNullable": true,
+         "defaultValue": null,
+         "validators": null,
+         "alias": "ICD7603"
+      },
+      {
+         "name": "icd7604",
+         "type": "list:yorn",
+         "size": 200,
+         "isPrimaryKey": false,
+         "isNullable": true,
+         "defaultValue": null,
+         "validators": null,
+         "alias": "ICD7604"
+      },
+      {
+         "name": "icd7610",
+         "type": "list:yorn",
+         "size": 200,
+         "isPrimaryKey": false,
+         "isNullable": true,
+         "defaultValue": null,
+         "validators": null,
+         "alias": "ICD7610"
+      },
+      {
+         "name": "icd7611",
+         "type": "list:yorn",
+         "size": 200,
+         "isPrimaryKey": false,
+         "isNullable": true,
+         "defaultValue": null,
+         "validators": null,
+         "alias": "ICD7611"
+      },
+      {
+         "name": "icd7612",
+         "type": "list:yorn",
+         "size": 200,
+         "isPrimaryKey": false,
+         "isNullable": true,
+         "defaultValue": null,
+         "validators": null,
+         "alias": "ICD7612"
+      },
+      {
+         "name": "icd7613",
+         "type": "list:yorn",
+         "size": 200,
+         "isPrimaryKey": false,
+         "isNullable": true,
+         "defaultValue": null,
+         "validators": null,
+         "alias": "ICD7613"
+      },
+      {
+         "name": "icd7614",
+         "type": "list:yorn",
+         "size": 200,
+         "isPrimaryKey": false,
+         "isNullable": true,
+         "defaultValue": null,
+         "validators": null,
+         "alias": "ICD7614"
+      },
+      {
+         "name": "icd7615",
+         "type": "list:yorn",
+         "size": 200,
+         "isPrimaryKey": false,
+         "isNullable": true,
+         "defaultValue": null,
+         "validators": null,
+         "alias": "ICD7615"
+      },
+      {
+         "name": "tpae7610",
+         "type": "list:yorn",
+         "size": 200,
+         "isPrimaryKey": false,
+         "isNullable": true,
+         "defaultValue": null,
+         "validators": null,
+         "alias": "TPAE7610"
+      },
+      {
+         "name": "tpae7611",
+         "type": "list:yorn",
+         "size": 200,
+         "isPrimaryKey": false,
+         "isNullable": true,
+         "defaultValue": null,
+         "validators": null,
+         "alias": "TPAE7611"
+      },
+      {
+         "name": "tpae7612",
+         "type": "list:yorn",
+         "size": 200,
+         "isPrimaryKey": false,
+         "isNullable": true,
+         "defaultValue": null,
+         "validators": null,
+         "alias": "TPAE7612"
+      },
+      {
+         "name": "tpae7613",
+         "type": "list:yorn",
+         "size": 200,
+         "isPrimaryKey": false,
+         "isNullable": true,
+         "defaultValue": null,
+         "validators": null,
+         "alias": "TPAE7613"
+      },
+      {
+         "name": "baselang",
+         "type": "string",
+         "size": 200,
+         "isPrimaryKey": false,
+         "isNullable": true,
+         "defaultValue": null,
+         "validators": null,
+         "alias": "Base Language"
+      },
+      {
+         "name": "additionallang",
+         "type": "string",
+         "size": 200,
+         "isPrimaryKey": false,
+         "isNullable": true,
+         "defaultValue": null,
+         "validators": null,
+         "alias": "Additional Language"
+      },
+      {
+         "name": "type",
+         "type": "list:envtype",
+         "size": 200,
+         "isPrimaryKey": false,
+         "isNullable": false,
+         "defaultValue": "prod",
+         "validators": [
+            "required"
+         ],
+         "alias": "Type"
+      },
+      {
+         "name": "maximoit80",
+         "type": "list:yorn",
+         "size": 200,
+         "isPrimaryKey": false,
+         "isNullable": true,
+         "defaultValue": null,
+         "validators": null,
+         "alias": "Maximo IT 8.0"
+      },
+      {
+         "name": "maximoit81",
+         "type": "list:yorn",
+         "size": 200,
+         "isPrimaryKey": false,
+         "isNullable": true,
+         "defaultValue": null,
+         "validators": null,
+         "alias": "Maximo IT 8.1"
+      }
+   ],
+   "functions": [
+      {
+         "name": "Add Record",
+         "type": "insert",
+         "isDialog": false,
+         "isUserDefined": false,
+         "context": "grid"
+      },
+      {
+         "name": "Update Record",
+         "type": "update",
+         "isDialog": false,
+         "isUserDefined": false,
+         "context": "grid"
+      },
+      {
+         "name": "Delete Record",
+         "type": "delete",
+         "isDialog": false,
+         "isUserDefined": false,
+         "context": "grid"
+      },
+      {
+         "name": "L3 Setups View",
+         "type": "l3envsview",
+         "isDialog": false,
+         "isUserDefined": true,
+         "context": "grid"
+      }
+   ]
+}
